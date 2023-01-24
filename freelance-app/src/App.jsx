@@ -6,10 +6,17 @@ import Header from "./components/Header";
 import Error from "./components/Error";
 import Results from "./pages/Results";
 import Freelances from "./pages/Freelances";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+div {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}`
 
 function App() {
   return (
     <BrowserRouter>
+    <GlobalStyle />
     <Header />
     
       <Routes>

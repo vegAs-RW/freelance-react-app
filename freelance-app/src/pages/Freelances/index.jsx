@@ -57,7 +57,7 @@ const Freelances = () => {
     return (
         <div>
             <PageTitle>Trouvez votre freelance</PageTitle>
-            <PageSubtitle>Chez Shinyy vous trouverez le profil qui correspond a votre recherche</PageSubtitle>
+            <PageSubtitle>Chez Shinyy vous trouverez le profil qui correspond à vos besoins</PageSubtitle>
             <CardsContainer>
             {freelanceProfiles.map((profil, index) => (
                 <Card key={`${profil.name}-${index}`}
