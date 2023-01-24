@@ -67,9 +67,9 @@ const Survey = () => {
         <QuestionContent>{surveyData[questionNumber]}</QuestionContent>
       )}
       <LinkWrapper>
-      <Link to={`/surveys/${prevQuestionNumber}`}>Précédent</Link>
+      <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
       {surveyData[questionNumberInt + 1] ? (
-        <Link to={`/surveys/${nextQuestionNumber}`}>Suivant</Link>
+        <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
       ) : (
         <Link to="/results">Résultats</Link>
       )}
