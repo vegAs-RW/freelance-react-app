@@ -7,6 +7,7 @@ import Error from "./components/Error";
 import Results from "./pages/Results";
 import Freelances from "./pages/Freelances";
 import { createGlobalStyle } from "styled-components";
+import { ThemeProvider } from "./utils/context";
 
 const GlobalStyle = createGlobalStyle`
 div {
@@ -16,6 +17,7 @@ div {
 function App() {
   return (
     <BrowserRouter>
+    <ThemeProvider>
     <GlobalStyle />
     <Header />
     
@@ -26,6 +28,7 @@ function App() {
         <Route path="/results" element={<Results />}></Route>
         <Route path="/freelances" element={<Freelances />}></Route>
       </Routes>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }
