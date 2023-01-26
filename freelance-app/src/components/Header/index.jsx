@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <NavContainer>
             <Link to="/"><HomeLogo src={DarkLogo}/></Link>
-            <StyledLink to='/'>Acceuil</StyledLink>
+            <StyledLink to='/'>Accueil</StyledLink>
             <StyledLink to="/survey/1" $isFullLink>Questionnaire</StyledLink>
             <StyledLink to="/freelances">Profils</StyledLink>
         </NavContainer>
